@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>齐代清 - 机械工程师简历</title>
+    <style>
+        :root {
+            --primary-color: #003366; /* 天大蓝 */
+            --secondary-color: #f4f4f4;
+            --text-color: #333;
+            --border-color: #ddd;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #e9e9e9;
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        /* Header Section */
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .header-left h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        .header-left .target-job {
+            font-size: 18px;
+            font-weight: normal;
+            color: #666;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .header-right img {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Section Styling */
+        .section-title {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 8px 15px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Grid for Basic Info */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 20px;
+            margin-bottom: 10px;
+        }
+
+        .info-item {
+            display: flex;
+            font-size: 14px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            width: 80px;
+            color: #555;
+        }
+
+        .info-value {
+            flex: 1;
+            color: #333;
+        }
+
+        /* Education & Experience Lists */
+        .timeline-item {
+            margin-bottom: 20px;
+            border-left: 2px solid var(--secondary-color);
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: var(--primary-color);
+            border-radius: 50%;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: var(--primary-color);
+        }
+
+        .item-subtitle {
+            font-size: 14px;
+            color: #666;
+            font-weight: normal;
+        }
+
+        .item-date {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+        }
+
+        .item-desc {
+            font-size: 14px;
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        .item-desc ul {
+            margin: 5px 0 0 20px;
+            padding: 0;
+        }
+
+        .item-desc li {
+            margin-bottom: 3px;
+        }
+
+        /* Skills Tags */
+        .tags {
+            margin-top: 5px;
+        }
+        .tag {
+            display: inline-block;
+            background: #eef2f7;
+            color: var(--primary-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* Self Evaluation */
+        .evaluation-box {
+            background: var(--secondary-color);
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column-reverse;
+                align-items: flex-end;
+            }
+            .header-right img {
+                margin-bottom: 15px;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .item-header {
+                flex-direction: column;
+            }
+            .item-date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <!-- Header -->
+        <header>
+            <div class="header-left">
+                <h1>齐代清</h1>
+                <span class="target-job">意向岗位：机械工程师</span>
+            </div>
+            <div class="header-right">
+                <!-- 建议将照片命名为 photo.jpg 并放在同一目录下，或者使用在线图片链接 -->
+                <img src="photo.jpg" alt="齐代清照片" onerror="this.src='https://via.placeholder.com/120x150?text=Photo'">
+            </div>
+        </header>
+
+        <!-- Basic Info -->
+        <section class="section">
+            <div class="section-title">基本信息</div>
+            <div class="info-grid">
+                <div class="info-item"><span class="info-label">姓名：</span><span class="info-value">齐代清</span></div>
+                <div class="info-item"><span class="info-label">出生年月：</span><span class="info-value">2003.04</span></div>
+                <div class="info-item"><span class="info-label">联系电话：</span><span class="info-value">15882960128</span></div>
+                <div class="info-item"><span class="info-label">民族：</span><span class="info-value">汉族</span></div>
+                <div class="info-item"><span class="info-label">家庭住址：</span><span class="info-value">福建省泉州市</span></div>
+                <div class="info-item"><span class="info-label">电子邮箱：</span><span class="info-value">daiqingera@163.com</span></div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <div class="section-title">教育背景</div>
+
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">天津大学 <span class="item-subtitle">（985/211/双一流）</span></span>
+                    <span class="item-date">2025.09 - 至今 (硕士)</span>
+                </div>
+                <div class="item-desc">
+                    <strong>专业：</strong>仪器仪表工程<br>
+                    <strong>成绩：</strong>推免学分绩：90.12 (专业第一)
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">天津工业大学 <span class="item-subtitle">（双一流）</span></span>
+                    <span class="item-date">2021.09 - 2025.06 (本科)</span>
+                </div>
+                <div class="item-desc">
+                    <strong>专业：</strong>机械电子工程<br>
+                    <strong>主修课程：</strong>计算机制图、计算机辅助设计、材料力学、理论力学、机械原理、电工电子技术、数字电子技术、机械设计、自动控制原理、单片机原理及接口技术
+                </div>
+            </div>
+
+            <div class="timeline-item" style="border:none; padding-left:0;">
+                <div class="item-desc">
+                    <strong>荣誉奖项：</strong>
+                    <div class="tags">
+                        <span class="tag">国家励志奖学金</span>
+                        <span class="tag">桑麻基金会奖学金</span>
+                        <span class="tag">紫荆清航学业奖学金</span>
+                        <span class="tag">校长奖学金</span>
+                        <span class="tag">优秀学生干部</span>
+                    </div>
+                    <div style="margin-top:5px; font-size:13px; color:#555;">
+                        累计获得国家级、省级竞赛奖励十余项（包括机创赛、工创赛、先进成图比赛等）
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Experience -->
+        <section class="section">
+            <div class="section-title">项目经历</div>
+
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">“西门子杯”中国智能制造挑战赛——国家级A类竞赛 (队长)</span>
+                    <span class="item-date">2023.03 - 2023.07</span>
+                </div>
+                <div class="item-desc">
+                    <strong>项目内容：</strong>本项目主要针对课题给出的生产现状进行人机协作方案优化，并撰写优化方案书。<br>
+                    <strong>主要职责：</strong>
+                    <ul>
+                        <li>利用企业精益生产、柔性生产知识，在三定原则、5S管理的要求下对产线进行优化；</li>
+                        <li>负责用Solidworks进行对优化方案进行产线建模，制作产线生产动画，以直观展示优化方案；（零件数3500+）</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">仿生扑翼飞行器——全国大学生机械创新设计大赛</span>
+                    <span class="item-date">2023.11 - 2024.06</span>
+                </div>
+                <div class="item-desc">
+                    <strong>项目内容：</strong>该竞赛旨在设计并制作一款重量、尺寸均符合要求的仿生扑翼飞行器；<br>
+                    <strong>主要职责：</strong>
+                    <ul>
+                        <li>担任队长，负责方案构思、统筹推进项目进行；参与尺寸链计算、公差配合分析；</li>
+                        <li>负责使用Solidworks、creo建模软件对机身整体建模和零件设计制造（3D打印）；了解常见材料的性能；</li>
+                        <li>熟练使用AUTOCAD制作零件工程图、整体装配图，并进行结构整理优化以及标准零件公差配合设定；</li>
+                        <li>使用ANSYS对仿生扑翼飞行器主要结构件进行结构静应力、载荷情况下进行受力分析；提升运行稳定性；</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">“高教杯”全国大学生先进成图技术与产品信息建模创新大赛</span>
+                    <span class="item-date">2023.03 - 2024.05</span>
+                </div>
+                <div class="item-desc">
+                    <strong>项目内容：</strong>该竞赛旨在有限时间内用solidworks对产品进行建模，考察速度和正确率；<br>
+                    <strong>主要职责：</strong>通过长期的零件建模训练，掌握大量solidworks、AUTOCAD软件操作快捷键，能够熟练进行结构建模；
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Experience -->
+        <section class="section">
+            <div class="section-title">实习经历</div>
+
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">天津精仪精测科技有限公司 —— 机械工程师（助理）</span>
+                    <span class="item-date">2024.07 - 2024.08</span>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li><strong>任务一：</strong>使用AUTOCAD出工程图、分类整理相关零件和物料、协助进行实物装配调整；</li>
+                        <li><strong>任务二：</strong>《一种蛇形管道内检测器机器运动方法》发明专利撰写，相关零件的优化改版、出图；</li>
+                        <li><strong>任务三：</strong>协助进行PCB检测工装设计，负责结构设计，制作BOM表，零件装配调试工作；</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">司维者（天津）科技有限公司 —— 机械结构工程师（助理）</span>
+                    <span class="item-date">2025.03 - 2025.05</span>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li>负责对接客户的需求，并利用Solidworks在规定时间内按需求进行产品或者场景的建模和装配；</li>
+                        <li>利用Keyshot对场景进行渲染，与客户确认效果图后生成stl工程文件；</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="item-header">
+                    <span class="item-title">天津企兴智财知识产权代理有限公司 —— 专利代理师（助理）</span>
+                    <span class="item-date">2025.07 - 2025.09</span>
+                </div>
+                <div class="item-desc">
+                    <ul>
+                        <li>负责提取客户技术交底文件中的创新点并建模，撰写专利申请文件，负责专利在实质审查阶段的答辩；</li>
+                        <li>目前已代理撰写6篇实用新型专利，1篇发明专利；</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Self Evaluation -->
+        <section class="section">
+            <div class="section-title">自我评价</div>
+            <div class="evaluation-box">
+                学习能力强，喜欢有挑战性的工作，能够脚踏实地并冷静分析问题。遇到难题不慌乱，会和同事沟通交流，共同讨论解决问题。
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
